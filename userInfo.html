@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--	Author: Anthony Storti
+		Date:	October 1, 2019
+		File:
+		Purpose:HTML form for submitting userInfo to PHP form
+		Input: 	first name, last name, phone number, email
+		Output: submits first name, last name, phone number, email to UpdateInfo.php
+-->
+
+
+<html>
+<head>
+	<title>Names Report</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+	<h1>Names Report</h1>
+	<form action = "updateInfo.php" method = "post" >
+
+		<table border = \"3\">
+		<tr>
+		<td align = 'center'> First Name</td>
+		<td align = 'center'><input type = "text" size = "30" name = "first"></td>
+		</tr>
+		<tr>
+		<td align = 'center'> Last Name</td>
+		<td align = 'center'><input type = "text" size = "30" name = "last"></td>
+		</tr>
+		<tr>
+		<td align = 'center'>Email</td>
+		<td align = 'center'><input type = "text" size = "30" name = "email"></td>
+		</tr>
+		<tr>
+		<td align = 'center'>Phone Number</td>
+		<td align = 'center'><input type = "text" size = "30" name = "phone"></td>
+		</tr>
+</table>
+		<p><input type = "submit" value = "SUBMIT">
+		<input type = "reset" value = "RESET"></p>
+	</form>
+</body>
+</html>
